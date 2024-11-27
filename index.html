@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tic-tac-toe game</title>
+    <style>
+        body {
+            background: rgb(250, 239, 230); }
+        .main {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            gap: 20px;
+            justify-content: center;
+            align-items: center;}
+        .c {
+            width: 100px;
+            height: 100px;
+            background: rgb(244, 186, 135);
+            color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: red;
+            font-size: 40px;
+            font-weight: bolder;        }
+        .c:hover {
+            cursor: pointer;       }
+        .btn {
+            text-align: center;
+            margin-top: 20px;       }
+        p {
+            text-align: center;
+            color: blue;
+            font-size: 40px;
+            margin-top: 5px;       }
+        h1 {
+            font-size: 60px;
+            color: purple;
+       }
+        button {
+            padding: 10px 20px;
+            background: black;
+            font-size: medium;
+            color: white;
+            box-shadow: 1px 1px 2px 1px grey;
+            border-radius: 5px;        }
+        button:hover {
+            cursor: pointer;
+            box-shadow: 1px 1px 2px 1px red;}
+    </style>
+</head>
+<body>
+    <header>
+        <h1 align="center">Tic-Tac-Toe</h1>
+    </header>
+    <div class="main">
+        <div class="c"></div>
+        <div class="c"></div>
+        <div class="c"></div>
+        <div class="c"></div>
+        <div class="c"></div>
+        <div class="c"></div>
+        <div class="c"></div>
+        <div class="c"></div>
+        <div class="c"></div>
+    </div>
+    <div class="btn"><button onclick="location.reload()">Restart</button></div>
+    <p id="result"></p>
+    <script src="script.js"></script>
+</body>
+</html>
