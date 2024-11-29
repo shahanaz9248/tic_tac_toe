@@ -10,23 +10,19 @@ c1.forEach(cell=> {
 
         cell.innerHTML=cp;
   
-        let player=cp;
-        if(player=="0"){
-            player="player 1";
-        }else{
-            player="player 2";
-        }
+         
+        
 
         if(c1[0].innerHTML===cp&&c1[1].innerHTML===cp&&c1[2].innerHTML===cp){
-            document.getElementById("result").innerHTML=`${player} is the winner`;
+            document.getElementById("result").innerHTML=`${cp} is the winner`;
             stop=true;
             return;
         }else if(c1[3].innerHTML===cp&&c1[4].innerHTML===cp&&c1[5].innerHTML===cp){
-            document.getElementById("result").innerHTML=`${player} is the winner`;
+            document.getElementById("result").innerHTML=`${cp} is the winner`;
             stop=true;
             return;
         } else if(c1[6].innerHTML===cp&&c1[7].innerHTML===cp&&c1[8].innerHTML===cp){
-            document.getElementById("result").innerHTML=`${player} is the winner`;
+            document.getElementById("result").innerHTML=`${cp} is the winner`;
             stop=true;
             return;
         }else if(c1[0].innerHTML===cp&&c1[3].innerHTML===cp&&c1[6].innerHTML===cp){
@@ -34,19 +30,19 @@ c1.forEach(cell=> {
             stop=true;
             return
         }else if(c1[1].innerHTML===cp&&c1[4].innerHTML===cp&& c1[7].innerHTML===cp){
-            document.getElementById("result").innerHTML=`${player} is the winner`;
+            document.getElementById("result").innerHTML=`${cp} is the winner`;
             stop=true;
             return;
         }else if(c1[2].innerHTML===cp&&c1[5].innerHTML===cp&&c1[8].innerHTML===cp){
-            document.getElementById("result").innerHTML=`${player} is the winner`;
+            document.getElementById("result").innerHTML=`${cp} is the winner`;
             stop=true;
             return;
         }else if(c1[0].innerHTML===cp&&c1[4].innerHTML===cp&&c1[8].innerHTML===cp){
-            document.getElementById("result").innerHTML=`${player} is the winner`;
+            document.getElementById("result").innerHTML=`${cp} is the winner`;
             stop=true;
             return;
         }else if(c1[2].innerHTML===cp&&c1[4].innerHTML===cp&&c1[6].innerHTML===cp){
-            document.getElementById("result").innerHTML=`${player} is the winner`;
+            document.getElementById("result").innerHTML=`${cp} is the winner`;
             stop=true;
             return;
         }else if(c1[0].innerHTML!=="" && c1[1].innerHTML!=="" && c1[2].innerHTML!=="" && c1[3].innerHTML!=="" && c1[4].innerHTML!=="" && c1[5].innerHTML!=="" && c1[6].innerHTML!=="" && c1[7].innerHTML!=="" && c1[8].innerHTML!==""){
